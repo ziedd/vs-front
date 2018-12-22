@@ -1,4 +1,4 @@
-Docker EPI
+Docker  pic-front-outremer
 ==================
 
 ## Install Docker
@@ -10,18 +10,18 @@ sudo usermod -aG docker ${USER}
 sudo reboot
 ```
 
-## Install containers for EPI
+## Install containers for PIC
 
 ```bash
 git clone https://github.com/bourdeau/docker-symfony4.git && cd docker-symfony4
 
 vim .env
 # Edit env variables to match  the project
-
+docker-compose -f docker-compose up or
 docker-compose up -d
 ```
 
-## Set up your Symfony4 application EPI
+## Set up the  application PIC with Symfony4
 
 ```bash
 # The path you defined above in .env
@@ -32,10 +32,10 @@ vim .env
 
 You are done!
 
-Visit: http://localhost:8080
+###### Visit: http://localhost:8080
 
 
-## Connect to a container
+##Connect to a container
 
 ```bash
 docker exec -it <CONTAINER_NAME> bash
@@ -43,6 +43,7 @@ docker exec -it <CONTAINER_NAME> bash
 # Composer is intalled in the apache container so you can:
 cd /var/www/app && composer install --prefer-dist
 
-
-##delete all docker images
+```
+## Delete all docker images
 sudo docker rm $(docker ps -a -q)
+
