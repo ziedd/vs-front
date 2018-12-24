@@ -4,7 +4,7 @@ services:
 
    symfony:
      build: .
-     container_name: symfony
+     container_name: pic
      restart: always
      volumes:
          - ${SYMFONY_PATH}:/var/www/app
@@ -14,11 +14,11 @@ services:
      env_file:
          - ./.env
      ports:
-         - "8080:80"
+         - "8081:80"
 
    db:
      image: mysql:5.7
-     container_name: mysql
+     container_name: mysql_pic
      volumes:
        - db_data:/var/lib/mysql
      restart: always

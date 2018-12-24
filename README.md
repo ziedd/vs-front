@@ -44,6 +44,8 @@ docker exec -it <CONTAINER_NAME> bash
 cd /var/www/app && composer install --prefer-dist
 
 ```
-## Delete all docker images
+## Delete all docker container
 sudo docker rm $(docker ps -a -q)
 
+## Delete all docker images
+sudo docker rmi $(docker  images -q)
