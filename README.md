@@ -13,7 +13,7 @@ sudo reboot
 ## Install containers for PIC
 
 ```bash
-git clone https://github.com/bourdeau/docker-symfony4.git && cd docker-symfony4
+git clone  the project pic-front-outremer 
 
 vim .env
 # Edit env variables to match  the project
@@ -44,8 +44,12 @@ docker exec -it <CONTAINER_NAME> bash
 cd /var/www/app && composer install --prefer-dist
 
 ```
+```bash
 ## Delete all docker container
 sudo docker rm $(docker ps -a -q)
+```
 
+```bash
 ## Delete all docker images
 sudo docker rmi $(docker  images -q)
+```
