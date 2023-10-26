@@ -1,4 +1,4 @@
-Docker  pic-front-outremer
+Docker 
 ==================
 
 ## Install Docker
