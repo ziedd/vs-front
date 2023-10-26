@@ -13,7 +13,7 @@ sudo reboot
 ## Install containers for PIC
 
 ```bash
-git clone  the project pic-front-outremer 
+git clone  the project 
 
 vim .env
 # Edit env variables to match  the project
